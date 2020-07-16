@@ -9,14 +9,14 @@ class Item extends Component{
 		return (
 			<li>
 				<div className="icon">
-					<img src={require(`../images/${this.props.data.image}`)}  alt="hambuerger" />
+					<img src={require(`../images/papas.png`)}  alt="hambuerger" />
 				</div>
 				<div className="name">
-					<span className="item-name">{this.props.data.name}</span>
-					<span className="item-price">{this.props.data.portion}</span>
+					<span className="item-name">{this.props.data.message}</span>
+					<span className="item-price">{this.props.data.messageTime}</span>
 				</div>
 				<div className="price">
-					<h3>${this.props.data.price}</h3>
+					<span className="price">{this.props.data.messageSenderUserName}</span>
 				</div>
 				<button className="remove" onClick={this._remove.bind(this)}>
 					<i className="material-icons">close</i>
